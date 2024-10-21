@@ -1,6 +1,6 @@
 <?php
 
-  $receiving_email_address = 'softit085@gmail.com';
+  $receiving_email_address = 'eduarddelacruz.it@gmail.com';
 
   if( file_exists($php_email_form = 'js/validate.js' )) {
     include( $php_email_form );

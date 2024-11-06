@@ -79,11 +79,10 @@
 
  
 <section id="hero" class="d-flex flex-column justify-content-center align-items-center"> 
-
-  <!-- Replace the <video> tag with the Google Drive embed <iframe> -->
-  <iframe src="https://drive.google.com/file/d/1DnLzo5Rf7oCzaRPIh650HIPgKI88wsLr/preview" 
-          width="640" height="480" allow="autoplay" id="hero-video" frameborder="0"></iframe>
-
+  <video autoplay muted loop id="hero-video" width="640" height="480">
+    <source src="https://yourserver.com/path-to-your-video.mp4" type="video/mp4">
+    Your browser does not support the video tag.
+  </video>
   <!-- Dark overlay -->
   <div class="hero-overlay"></div>
 
@@ -91,8 +90,8 @@
     <h1>Eduard Dela Cruz</h1>
     <p>I'm <span class="typed" data-typed-items="Freelance IT Field Engineer"></span></p>
   </div>
-
 </section>
+
 
 
 

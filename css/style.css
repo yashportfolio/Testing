@@ -240,77 +240,68 @@ h6 {
 --------------------------------------------------------------*/
 /* Hero Section */
 #hero {
-  position: relative;
   width: 100%;
-  height: 100vh; /* Full viewport height */
-  overflow: hidden;
+  height: 100vh;
+  background: url("../img/hero-bg.jpg") top center;
+  background-size: cover;
 }
 
-#hero video {
+#hero:before {
+  content: "";
+  background: rgba(5, 13, 24, 0.3);
   position: absolute;
+  bottom: 0;
   top: 0;
   left: 0;
-  width: 100%;
-  height: 100%;
-  object-fit: cover; /* Ensures the video covers the section completely */
+  right: 0;
   z-index: 1;
 }
 
-.hero-overlay {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: rgba(0, 0, 0, 0.5); /* Semi-transparent overlay for contrast */
+#hero .hero-container {
+  position: relative;
   z-index: 2;
+  min-width: 300px;
 }
 
-.hero-container {
-  position: relative;
-  z-index: 3; /* Ensures content is on top of the video and overlay */
+#hero h1 {
+  margin: 0 0 10px 0;
+  font-size: 64px;
+  font-weight: 700;
+  line-height: 56px;
   color: #fff;
-  text-align: center;
 }
 
-/*--------------------------------------------------------------
-# Sections General
---------------------------------------------------------------*/
-section {
-  padding: 60px 0;
-  overflow: hidden;
+#hero p {
+  color: #fff;
+  margin-bottom: 50px;
+  font-size: 26px;
+  font-family: "Poppins", sans-serif;
 }
 
-.section-bg {
-  background: #f5f8fd;
+#hero p span {
+  color: #fff;
+  padding-bottom: 4px;
+  letter-spacing: 1px;
+  border-bottom: 3px solid #149ddd;
 }
 
-.section-title {
-  padding-bottom: 30px;
+@media (min-width: 1024px) {
+  #hero {
+    background-attachment: fixed;
+  }
 }
 
-.section-title h2 {
-  font-size: 32px;
-  font-weight: bold;
-  margin-bottom: 20px;
-  padding-bottom: 20px;
-  position: relative;
-  color: #173b6c;
-}
+@media (max-width: 768px) {
+  #hero h1 {
+    font-size: 28px;
+    line-height: 36px;
+  }
 
-.section-title h2::after {
-  content: "";
-  position: absolute;
-  display: block;
-  width: 50px;
-  height: 3px;
-  background: #149ddd;
-  bottom: 0;
-  left: 0;
-}
-
-.section-title p {
-  margin-bottom: 0;
+  #hero h2 {
+    font-size: 18px;
+    line-height: 24px;
+    margin-bottom: 30px;
+  }
 }
 
 /*--------------------------------------------------------------

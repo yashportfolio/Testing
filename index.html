@@ -78,18 +78,23 @@
   </header>
 
  
-<section id="hero" class="d-flex flex-column justify-content-center align-items-center"> 
-  <video autoplay muted loop id="hero-video" width="640" height="480">
-    <source src="https://yourserver.com/path-to-your-video.mp4" type="video/mp4">
+<section id="hero" class="d-flex flex-column justify-content-center align-items-center">
+  
+  <!-- Background Video -->
+  <video autoplay muted loop id="hero-video" playsinline>
+    <source src="https://drive.google.com/uc?export=download&id=1DnLzo5Rf7oCzaRPIh650HIPgKI88wsLr" type="video/mp4">
     Your browser does not support the video tag.
   </video>
-  <!-- Dark overlay -->
+  
+  <!-- Dark overlay for contrast -->
   <div class="hero-overlay"></div>
 
+  <!-- Main content -->
   <div class="hero-container" data-aos="fade-in">
     <h1>Eduard Dela Cruz</h1>
     <p>I'm <span class="typed" data-typed-items="Freelance IT Field Engineer"></span></p>
   </div>
+
 </section>
 
 
